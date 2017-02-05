@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "atlas",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.26666666666666666,
+  "sample": 15,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "be6b28b0-202a-481f-87c0-3d1979cfd1ca"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "8b966575-2348-4fc1-80d5-5043c94351e0"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "e07f8fe8-a70f-4a3e-b6cc-9f59887e380c"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "44989496-1278-445d-8bbe-92fdd0351248"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

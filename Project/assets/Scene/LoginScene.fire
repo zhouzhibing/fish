@@ -41,7 +41,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_id": "b891cfaf-0b79-4329-ab29-277660e5948c",
-    "autoReleaseAssets": false
+    "autoReleaseAssets": true
   },
   {
     "__type__": "cc.Node",
@@ -160,7 +160,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "ButtonEnter",
+    "_name": "ButtonEnterMainScene",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
