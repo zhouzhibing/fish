@@ -23,7 +23,6 @@ cc.Class({
 
     onButtoneEnter:function()
     {
-        alert("onButtoneEnter");
         cc.director.loadScene('MainScene');
     }
     // called every frame, uncomment this function to activate update callback
