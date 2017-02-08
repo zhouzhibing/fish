@@ -5,7 +5,7 @@
   "_rawFiles": null,
   "_duration": 0.05,
   "sample": 60,
-  "speed": 0.06,
+  "speed": 0.1,
   "wrapMode": 2,
   "curveData": {
     "comps": {
@@ -14,19 +14,19 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "01f5f64d-7f04-4fa4-9f2e-f92cb0d7df13"
+              "__uuid__": "f2cea339-5ab1-4b2d-8ae0-5eb1270a93a5"
             }
           },
           {
             "frame": 0.016666666666666666,
             "value": {
-              "__uuid__": "d32c638a-b4dd-4b59-9cdd-898747fec02c"
+              "__uuid__": "ec88d61d-7567-4699-8e97-6f02795a3f0c"
             }
           },
           {
             "frame": 0.03333333333333333,
             "value": {
-              "__uuid__": "5078e48b-3421-4793-85d9-b4079843c4bd"
+              "__uuid__": "a300d0aa-f442-4419-a9cd-68ffca1deb32"
             }
           }
         ]
