@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Fish_1",
+    "_name": "Fish_2",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -29,8 +29,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 121,
-      "height": 43
+      "width": 478,
+      "height": 237
     },
     "_children": [
       {
@@ -43,8 +43,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 396,
-      "y": 91
+      "x": 369.6,
+      "y": 184.8
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -103,8 +103,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -36.9,
-      "y": 1.7
+      "x": -225.9,
+      "y": 4.1
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -156,9 +156,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "1ac6c88b-2c39-43ff-9a5c-a7ad3b356989"
+      "__uuid__": "765a7311-7c78-47c3-98e7-4d8beb9eafc8"
     },
-    "fileId": "12055NtNKpGba3WBcS9fgFo",
+    "fileId": "3f93191MyBJhLpLuNB7JcQn",
     "sync": false
   },
   {
@@ -170,11 +170,14 @@
     },
     "_enabled": true,
     "_defaultClip": {
-      "__uuid__": "6146b6f6-660c-4fa6-bba3-1e22ed6eee5d"
+      "__uuid__": "ab69ec2e-7c9c-473b-9374-7dd39ea83808"
     },
     "_clips": [
       {
-        "__uuid__": "6146b6f6-660c-4fa6-bba3-1e22ed6eee5d"
+        "__uuid__": "ab69ec2e-7c9c-473b-9374-7dd39ea83808"
+      },
+      {
+        "__uuid__": "8511301f-ce73-4497-9017-0b08f5c2aa1c"
       }
     ],
     "playOnLoad": true
@@ -188,7 +191,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "8ceb310c-d41f-455a-a18d-7428c8c9ac7d"
+      "__uuid__": "5078e48b-3421-4793-85d9-b4079843c4bd"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -225,9 +228,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "1ac6c88b-2c39-43ff-9a5c-a7ad3b356989"
+      "__uuid__": "765a7311-7c78-47c3-98e7-4d8beb9eafc8"
     },
-    "fileId": "30368I0s7pLSoO3ooDULOhJ",
+    "fileId": "69323IzQy1HGatjg0KXpxiY",
     "sync": false
   }
 ]

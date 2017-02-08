@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Fish_2_DJ",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.06666666666666667,
+  "sample": 60,
+  "speed": 0.1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "9d84e53e-c514-460f-b41a-4d83543cba19"
+            }
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": {
+              "__uuid__": "456a818e-876c-4992-b6fc-238d56b3dc6d"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "c235ae5f-3a88-4393-8c43-e360e54324cd"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "d4bcb190-e009-4650-a253-3346b5e9882b"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
