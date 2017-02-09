@@ -29,8 +29,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 478,
-      "height": 237
+      "width": 267,
+      "height": 259
     },
     "_children": [
       {
@@ -72,7 +72,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Head",
+    "_name": "Body",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -93,8 +93,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 10,
-      "height": 10
+      "width": 70,
+      "height": 30
     },
     "_children": [],
     "_rotationX": 0,
@@ -103,7 +103,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -225.9,
+      "x": 3.5,
       "y": 4.1
     },
     "_skewX": 0,
@@ -132,9 +132,7 @@
       "__id__": 2
     },
     "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "8ceb310c-d41f-455a-a18d-7428c8c9ac7d"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -191,7 +189,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "5078e48b-3421-4793-85d9-b4079843c4bd"
+      "__uuid__": "7d65a299-e615-446b-b964-4bec3a83536a"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -206,7 +204,9 @@
     "_isTrimmedMode": false,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_atlas": null
+    "_atlas": {
+      "__uuid__": "5a9d152e-6103-4ffa-9c0f-b5ac2d06b7a0"
+    }
   },
   {
     "__type__": "3d6286T4NNI54c3G2U0Mk7h",
@@ -219,8 +219,8 @@
     "fish": {
       "__id__": 1
     },
-    "leftRota": 0,
-    "rightRota": 180
+    "leftRota": 180,
+    "rightRota": 0
   },
   {
     "__type__": "cc.PrefabInfo",

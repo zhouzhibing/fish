@@ -40,31 +40,34 @@ cc.Class({
     
     initEvent : function()
     {
-        if(this.fish.name != "Fish_2")
+        if(this.fish.name.indexOf("Fish_2")  < 0)
             return;
+        
+        var self = this;
+        var body = cc.find("Canvas/GameNode/"+this.fish.name+"/Body");
+ 
+        body.on(cc.Node.EventType.TOUCH_START , function(event)
+        {
+            var fish = event.target.parent;
+            fish.stopAllActions();
+            var animation = fish.getComponent(cc.Animation);
+            animation.play("Fish_2_Web");
             
-        this.fish.on(cc.Node.EventType.MOUSE_DOWN , function(event)
-        {
-            var animation =  event.target.getComponent(cc.Animation);
-            animation.play("Fish_2_DJ");
-        });
-        this.fish.on(cc.Node.EventType.TOUCH_START , function(event)
-        {
-            var animation =  event.target.getComponent(cc.Animation);
-            animation.play("Fish_2_DJ");
         });
         
-        
-        
-        this.fish.on(cc.Node.EventType.MOUSE_UP , function(event)
+        body.on(cc.Node.EventType.TOUCH_END , function(event)
         {
-            var animation =  event.target.getComponent(cc.Animation);
+            var fish = event.target.parent;
+            var animation = fish.getComponent(cc.Animation);
             animation.play("Fish_2");
+            self.move();
         });
-        this.fish.on(cc.Node.EventType.TOUCH_END , function(event)
+        
+        body.on(cc.Node.EventType.TOUCH_MOVE , function(event)
         {
-            var animation =  event.target.getComponent(cc.Animation);
-            animation.play("Fish_2");
+            var fish = event.target.parent;
+            fish.position = event.touch._point;
+            //console.log("event.touch.potint = " + event.touch._point);
         });
     
     },
@@ -99,8 +102,6 @@ cc.Class({
                 this.fish.rotation=this.rightRota;
             else
                 this.fish.rotation=this.leftRota;
-                
-            console.log("this.fish.rotation = " + this.fish.rotation);
         }
 
         var moveAction = cc.moveTo(speed, toX , toY);

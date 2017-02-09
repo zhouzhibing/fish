@@ -3,9 +3,9 @@
   "_name": "Fish_2",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.05,
+  "_duration": 0.06666666666666667,
   "sample": 60,
-  "speed": 0.1,
+  "speed": 0.08,
   "wrapMode": 2,
   "curveData": {
     "comps": {
@@ -14,19 +14,25 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "f2cea339-5ab1-4b2d-8ae0-5eb1270a93a5"
+              "__uuid__": "8614f231-e583-469b-90cd-f7a1fcbdc0c0"
             }
           },
           {
             "frame": 0.016666666666666666,
             "value": {
-              "__uuid__": "ec88d61d-7567-4699-8e97-6f02795a3f0c"
+              "__uuid__": "2886dac2-258f-4f06-8c6e-e135980226ea"
             }
           },
           {
             "frame": 0.03333333333333333,
             "value": {
-              "__uuid__": "a300d0aa-f442-4419-a9cd-68ffca1deb32"
+              "__uuid__": "8495aae6-ad24-4418-ac95-c2f126f24416"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "7d65a299-e615-446b-b964-4bec3a83536a"
             }
           }
         ]

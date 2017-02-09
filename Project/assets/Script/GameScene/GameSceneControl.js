@@ -23,24 +23,24 @@ cc.Class({
     onLoad: function () 
     {
         
-        cc.loader.loadRes("Prefable/Fish_2", (err , prefable) => {
-            for(var i = 0 ; i < 1 ; i ++)
+       
+       var index = 0;
+       cc.loader.loadRes("Prefable/Fish_1", (err , prefable) => {  
+            for(var i = 0 ; i < 15 ; i ++)
             {
                 var node = cc.instantiate(prefable);
                 this.content.addChild(node);
                 var x = this.GetRandomNum(0 , 900);
                 var y = this.GetRandomNum(0, 600);
                 node.position = cc.v2(x, y);
-                
-                //var nodeAni = node.getComponent(cc.Animation);
-                //nodeAni.play("Fish_2_DJ");
             }
         });
         
-       cc.loader.loadRes("Prefable/Fish_1", (err , prefable) => {  
+        cc.loader.loadRes("Prefable/Fish_2", (err , prefable) => {
             for(var i = 0 ; i < 5 ; i ++)
             {
                 var node = cc.instantiate(prefable);
+                node.name += "_p"+i;
                 this.content.addChild(node);
                 var x = this.GetRandomNum(0 , 900);
                 var y = this.GetRandomNum(0, 600);
@@ -49,7 +49,7 @@ cc.Class({
         });
         
         cc.loader.loadRes("Prefable/Fish_3", (err , prefable) => {  
-            for(var i = 0 ; i < 15 ; i ++)
+            for(var i = 0 ; i < 3 ; i ++)
             {
                 var node = cc.instantiate(prefable);
                 this.content.addChild(node);
