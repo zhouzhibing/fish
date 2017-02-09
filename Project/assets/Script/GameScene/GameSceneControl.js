@@ -13,23 +13,23 @@ cc.Class({
         // },
         // ...
         
-        content: cc.Node  
+        content: cc.Node,
+        gameFishPool : cc.Node
     },
     GetRandomNum:function(Min,Max)
     {   
         return Math.round(Math.random() * Max + Min);
     } ,
-    // use this for initialization
-    onLoad: function () 
+    
+    createFish:function()
     {
-        
-       
-       var index = 0;
-       cc.loader.loadRes("Prefable/Fish_1", (err , prefable) => {  
-            for(var i = 0 ; i < 15 ; i ++)
+        cc.loader.loadRes("Prefable/Fish_1", (err , prefable) => {  
+            for(var i = 0 ; i < 20 ; i ++)
             {
                 var node = cc.instantiate(prefable);
-                this.content.addChild(node);
+                node.initName = node.name;
+                node.name = node.initName + "_p"+i;
+                this.gameFishPool.addChild(node);
                 var x = this.GetRandomNum(0 , 900);
                 var y = this.GetRandomNum(0, 600);
                 node.position = cc.v2(x, y);
@@ -37,11 +37,12 @@ cc.Class({
         });
         
         cc.loader.loadRes("Prefable/Fish_2", (err , prefable) => {
-            for(var i = 0 ; i < 5 ; i ++)
+            for(var i = 0 ; i < 8 ; i ++)
             {
                 var node = cc.instantiate(prefable);
-                node.name += "_p"+i;
-                this.content.addChild(node);
+                node.initName = node.name;
+                node.name = node.initName + "_p"+i;
+                this.gameFishPool.addChild(node);
                 var x = this.GetRandomNum(0 , 900);
                 var y = this.GetRandomNum(0, 600);
                 node.position = cc.v2(x, y);
@@ -49,15 +50,36 @@ cc.Class({
         });
         
         cc.loader.loadRes("Prefable/Fish_3", (err , prefable) => {  
-            for(var i = 0 ; i < 3 ; i ++)
+            for(var i = 0 ; i < 10 ; i ++)
             {
                 var node = cc.instantiate(prefable);
-                this.content.addChild(node);
+                node.initName = node.name;
+                node.name = node.initName + "_p"+i;
+                this.gameFishPool.addChild(node);
                 var x = this.GetRandomNum(0 , 900);
                 var y = this.GetRandomNum(0, 600);
                 node.position = cc.v2(x, y);
             }
         });
+    },
+    
+    initEvent:function()
+    {
+        var bullet = cc.find("Canvas/GameButtom/Sprite_Bullet");
+        this.gameFishPool.on(cc.Node.EventType.TOUCH_END , (event) =>{
+           //alert("发射炮弹");
+        });
+        this.gameFishPool.on(cc.Node.EventType.MOUSE_MOVE ,(event) =>{
+            //var action = cc.rotateBy(1,45);
+           // bullet.runAction(action);
+        });
+    },
+    
+    // use this for initialization
+    onLoad: function () 
+    {
+       this.createFish();
+       this.initEvent();
     },
     
     onButtonAction:function()

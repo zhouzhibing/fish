@@ -40,18 +40,15 @@ cc.Class({
     
     initEvent : function()
     {
-        if(this.fish.name.indexOf("Fish_2")  < 0)
-            return;
-        
         var self = this;
-        var body = cc.find("Canvas/GameNode/"+this.fish.name+"/Body");
+        var body = cc.find("Canvas/GameFishPool/"+this.fish.name+"/Body");
  
         body.on(cc.Node.EventType.TOUCH_START , function(event)
         {
             var fish = event.target.parent;
             fish.stopAllActions();
             var animation = fish.getComponent(cc.Animation);
-            animation.play("Fish_2_Web");
+            animation.play(fish.initName + "_Web");
             
         });
         
@@ -59,7 +56,7 @@ cc.Class({
         {
             var fish = event.target.parent;
             var animation = fish.getComponent(cc.Animation);
-            animation.play("Fish_2");
+            animation.play(fish.initName);
             self.move();
         });
         

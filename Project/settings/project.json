@@ -1,12 +1,18 @@
 {
   "collision-matrix": [
     [
+      true,
+      false
+    ],
+    [
+      false,
       true
     ]
   ],
   "excluded-modules": [],
   "group-list": [
-    "default"
+    "Buttom",
+    "Fish"
   ],
-  "start-scene": "current"
+  "start-scene": "5efe48a5-c7c1-417d-ab9f-0248b03ff320"
 }

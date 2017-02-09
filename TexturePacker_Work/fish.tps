@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>fish.png</filename>
+        <filename>../images/fish/fish_resource.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -56,7 +56,7 @@
             <key>width</key>
             <int>2048</int>
             <key>height</key>
-            <int>2048</int>
+            <int>1024</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -99,7 +99,7 @@
             <key>packageName</key>
             <string>Texture</string>
             <key>javaFileName</key>
-            <filename>fish.java</filename>
+            <filename>../images/fish/fish_resource.java</filename>
             <key>wrap</key>
             <struct type="AndEngineWrap">
                 <key>s</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>fish.plist</filename>
+        <filename>../images/fish/fish_resource.plist</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
@@ -148,18 +148,7 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>Fish_Image/Fish_2_1_DJ.png</filename>
-            <filename>Fish_Image/Fish_2_2.png</filename>
-            <filename>Fish_Image/Fish_2_2_DJ.png</filename>
-            <filename>Fish_Image/Fish_2_3_DJ.png</filename>
-            <filename>Fish_Image/fish_1_0.png</filename>
-            <filename>Fish_Image/fish_1_1.png</filename>
-            <filename>Fish_Image/fish_1_2.png</filename>
-            <filename>Fish_Image/fish_1_3.png</filename>
-            <filename>Fish_Image/fish_1_4.png</filename>
-            <filename>Fish_Image/Fish_2_0.png</filename>
-            <filename>Fish_Image/Fish_2_0_DJ.png</filename>
-            <filename>Fish_Image/Fish_2_1.png</filename>
+            <filename>../images/fish/fish</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
