@@ -508,7 +508,7 @@
       "__uuid__": "f49ef835-5aa1-48bf-8b2c-6c2a28f8dd24"
     },
     "_volume": 1,
-    "_mute": true,
+    "_mute": false,
     "_loop": true,
     "playOnLoad": true,
     "preload": false
