@@ -24,7 +24,7 @@ cc.Class({
     createFish:function()
     {
         cc.loader.loadRes("Prefable/Fish_1", (err , prefable) => {  
-            for(var i = 0 ; i < 20 ; i ++)
+            for(var i = 0 ; i < 18 ; i ++)
             {
                 var node = cc.instantiate(prefable);
                 node.initName = node.name;
@@ -37,7 +37,7 @@ cc.Class({
         });
         
         cc.loader.loadRes("Prefable/Fish_2", (err , prefable) => {
-            for(var i = 0 ; i < 8 ; i ++)
+            for(var i = 0 ; i < 5 ; i ++)
             {
                 var node = cc.instantiate(prefable);
                 node.initName = node.name;
@@ -50,7 +50,20 @@ cc.Class({
         });
         
         cc.loader.loadRes("Prefable/Fish_3", (err , prefable) => {  
-            for(var i = 0 ; i < 10 ; i ++)
+            for(var i = 0 ; i < 8 ; i ++)
+            {
+                var node = cc.instantiate(prefable);
+                node.initName = node.name;
+                node.name = node.initName + "_p"+i;
+                this.gameFishPool.addChild(node);
+                var x = this.GetRandomNum(0 , 900);
+                var y = this.GetRandomNum(0, 600);
+                node.position = cc.v2(x, y);
+            }
+        });
+        
+        cc.loader.loadRes("Prefable/Fish_4", (err , prefable) => {  
+            for(var i = 0 ; i < 3 ; i ++)
             {
                 var node = cc.instantiate(prefable);
                 node.initName = node.name;
@@ -65,13 +78,13 @@ cc.Class({
     
     initEvent:function()
     {
-        var bullet = cc.find("Canvas/GameButtom/Sprite_Bullet");
+        var bullet = cc.find("CannonLayer/TopCannon/CannonLeftTop/Sprite_Bullet");
         this.gameFishPool.on(cc.Node.EventType.TOUCH_END , (event) =>{
            //alert("发射炮弹");
         });
         this.gameFishPool.on(cc.Node.EventType.MOUSE_MOVE ,(event) =>{
             //var action = cc.rotateBy(1,45);
-           // bullet.runAction(action);
+            //bullet.runAction(action);
         });
     },
     

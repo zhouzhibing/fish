@@ -31,9 +31,6 @@ cc.Class({
     // use this for initialization
     onLoad: function ()
     {
-        
-        console.log("this.Fish.name = "  + this.fish.name);
-        
         this.move();
         this.initEvent();
     },
@@ -85,13 +82,15 @@ cc.Class({
         var speed = this.GetRandomNum(5, 20);
       
         //设置方向
-        var x = this.fish.position.x;
-        var y = this.fish.position.y;
+      
         
         //var head = cc.find("Canvas/GameNode/" + this.fish.name + "/Head");
         //var headX =head.convertToWorldSpace(head.position).x ;
+        var body = cc.find("Canvas/GameFishPool/"+this.fish.name+"/Body");
+        var x = body.convertToWorldSpace(body.position).x;          //转换成世界坐标
+        var y = body.position.y;
         
-        //console.log("toX = " + toX + " headX = " + headX);
+        //console.log("toX = " + toX + " x = " + x);
        // console.log( "dir = " +dir +" speed = " + speed +  " toX= " + toX + " toY = " + toY + " headX = " + headX);
         if(toX != 0)  
         {
